@@ -115,6 +115,24 @@
   </tr>
 </table>
 
+</br>
+
+<p>Select your favorite browser:</p>
+<form action="/action_page.php">
+  <input type="radio" name="Album" onclick="myFunction(this.value)" value="It's Only Rock 'N' Roll">It's Only Rock 'N' Roll<br>
+  <input type="radio" name="Album" onclick="myFunction(this.value)" value="The Rolling Stones">The Rolling Stones<br>
+  <input type="radio" name="Album" onclick="myFunction(this.value)" value="Blue and Lonesome">Blue and Lonesome<br>
+
+  Your favorite browser is: <input type="text" id="result">
+  <input type="submit" value="Submit form">
+</form>
+
+<script>
+function myFunction(browser) {
+    document.getElementById("result").value = browser;
+}
+</script>
+
 
 <a href="https://www.youtube.com/">Listen here</a> 
 
